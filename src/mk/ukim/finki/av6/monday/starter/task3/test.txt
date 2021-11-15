@@ -1,0 +1,137 @@
+*** test case 1 ***
+
+INPUT:
+
+6
+3123 Sarah 41 FEMALE Pamela
+1795 Sarah 23 FEMALE Sarah
+1288 Peter 52 MALE Peter
+3200 Sarah 88 FEMALE Mark
+9042 Peter 26 MALE Jack
+5804 Peter 73 MALE Jack
+7
+defghij Mark 76 MALE Emily Toothache
+ghijklm Pamela 89 FEMALE Stefan Headache
+mnopqrs Emily 40 FEMALE Peter Headache
+cdefghi Peter 15 MALE Joe Headache
+ijklmno Joe 27 MALE Sofia Toothache
+abcdefg Sarah 95 FEMALE Sarah Fever
+ghijklm Peter 2 MALE Emily Headache
+
+
+OUTPUT:
+
+--- FIRST HOSPITAL PATIENTS' INFORMATION ---
+FIRST SERVICE INFORMATION
+PatientFromDB1{code=1288, name='Peter', age=52, gender=MALE, doctor='Peter'}
+SECOND SERVICE INFORMATION
+PatientFromDB1{code=3123, name='Sarah', age=41, gender=FEMALE, doctor='Pamela'}
+PatientFromDB1{code=1795, name='Sarah', age=23, gender=FEMALE, doctor='Sarah'}
+THIRD SERVICE INFORMATION
+PatientFromDB1{code=1795, name='Sarah', age=23, gender=FEMALE, doctor='Sarah'}
+PatientFromDB1{code=3123, name='Sarah', age=41, gender=FEMALE, doctor='Pamela'}
+PatientFromDB1{code=3200, name='Sarah', age=88, gender=FEMALE, doctor='Mark'}
+--- SECOND HOSPITAL PATIENTS' INFORMATION ---
+FIRST SERVICE INFORMATION
+PatientFromDB2{code='mnopqrs', name='Emily', age=40, gender=FEMALE, doctor='Peter', symptom='Headache'}
+SECOND SERVICE INFORMATION
+PatientFromDB2{code='mnopqrs', name='Emily', age=40, gender=FEMALE, doctor='Peter', symptom='Headache'}
+THIRD SERVICE INFORMATION
+PatientFromDB2{code='abcdefg', name='Sarah', age=95, gender=FEMALE, doctor='Sarah', symptom='Fever'}
+
+
+*** test case 2 ***
+
+INPUT:
+
+20
+9658 Stefan 90 MALE Peter
+2209 Stefan 0 MALE Sofia
+7563 Peter 15 MALE Joe
+9586 Peter 67 MALE Mark
+2703 Sarah 31 FEMALE Mark
+398 Peter 19 MALE Peter
+4421 Sofia 4 FEMALE Mark
+7193 Sofia 63 FEMALE Sofia
+3432 Jack 65 MALE Pamela
+866 Jack 72 MALE Sarah
+4022 Mark 71 MALE Jack
+9588 Mark 43 MALE Mark
+6577 Sofia 69 FEMALE Sofia
+9635 Peter 17 MALE Peter
+9230 Sarah 43 FEMALE Stefan
+8169 Sarah 60 FEMALE Peter
+9912 Sofia 66 FEMALE Peter
+509 Stefan 26 MALE Peter
+2599 Stefan 55 MALE Sarah
+6926 Sarah 40 FEMALE Emily
+25
+hijklmn Sarah 27 FEMALE Ana Fever
+jklmnop Pamela 6 FEMALE Emily Toothache
+hijklmn Peter 97 MALE Sarah Headache
+opqrstu Pamela 39 FEMALE Stefan Toothache
+bcdefgh Peter 9 MALE Peter Toothache
+ghijklm Emily 43 FEMALE Peter Fever
+pqrstuv Pamela 1 FEMALE Sarah Fever
+hijklmn Peter 11 MALE Peter Headache
+klmnopq Peter 92 MALE Joe Toothache
+klmnopq Sarah 92 FEMALE Peter Toothache
+bcdefgh Peter 22 MALE Sarah Headache
+jklmnop Jack 70 MALE Stefan Headache
+hijklmn Sofia 65 FEMALE Joe Fever
+hijklmn Mark 23 MALE Sofia Toothache
+rstuvwx Jack 15 MALE Stefan Toothache
+jklmnop Sofia 66 FEMALE Jack Headache
+nopqrst Sarah 74 FEMALE Stefan Headache
+abcdefg Stefan 54 MALE Emily Fever
+ghijklm Jack 81 MALE Ana Headache
+nopqrst Stefan 38 MALE Joe Headache
+ghijklm Sarah 41 FEMALE Sarah Headache
+pqrstuv Mark 51 MALE Peter Fever
+ghijklm Pamela 6 FEMALE Pamela Headache
+opqrstu Stefan 44 MALE Peter Fever
+mnopqrs Mark 25 MALE Peter Toothache
+
+OUTPUT:
+
+--- FIRST HOSPITAL PATIENTS' INFORMATION ---
+FIRST SERVICE INFORMATION
+PatientFromDB1{code=9658, name='Stefan', age=90, gender=MALE, doctor='Peter'}
+PatientFromDB1{code=398, name='Peter', age=19, gender=MALE, doctor='Peter'}
+PatientFromDB1{code=9635, name='Peter', age=17, gender=MALE, doctor='Peter'}
+PatientFromDB1{code=8169, name='Sarah', age=60, gender=FEMALE, doctor='Peter'}
+PatientFromDB1{code=9912, name='Sofia', age=66, gender=FEMALE, doctor='Peter'}
+PatientFromDB1{code=509, name='Stefan', age=26, gender=MALE, doctor='Peter'}
+SECOND SERVICE INFORMATION
+PatientFromDB1{code=2703, name='Sarah', age=31, gender=FEMALE, doctor='Mark'}
+PatientFromDB1{code=4421, name='Sofia', age=4, gender=FEMALE, doctor='Mark'}
+PatientFromDB1{code=9230, name='Sarah', age=43, gender=FEMALE, doctor='Stefan'}
+PatientFromDB1{code=6926, name='Sarah', age=40, gender=FEMALE, doctor='Emily'}
+THIRD SERVICE INFORMATION
+PatientFromDB1{code=2703, name='Sarah', age=31, gender=FEMALE, doctor='Mark'}
+PatientFromDB1{code=6926, name='Sarah', age=40, gender=FEMALE, doctor='Emily'}
+PatientFromDB1{code=8169, name='Sarah', age=60, gender=FEMALE, doctor='Peter'}
+PatientFromDB1{code=9230, name='Sarah', age=43, gender=FEMALE, doctor='Stefan'}
+--- SECOND HOSPITAL PATIENTS' INFORMATION ---
+FIRST SERVICE INFORMATION
+PatientFromDB2{code='bcdefgh', name='Peter', age=9, gender=MALE, doctor='Peter', symptom='Toothache'}
+PatientFromDB2{code='ghijklm', name='Emily', age=43, gender=FEMALE, doctor='Peter', symptom='Fever'}
+PatientFromDB2{code='hijklmn', name='Peter', age=11, gender=MALE, doctor='Peter', symptom='Headache'}
+PatientFromDB2{code='klmnopq', name='Sarah', age=92, gender=FEMALE, doctor='Peter', symptom='Toothache'}
+PatientFromDB2{code='pqrstuv', name='Mark', age=51, gender=MALE, doctor='Peter', symptom='Fever'}
+PatientFromDB2{code='opqrstu', name='Stefan', age=44, gender=MALE, doctor='Peter', symptom='Fever'}
+PatientFromDB2{code='mnopqrs', name='Mark', age=25, gender=MALE, doctor='Peter', symptom='Toothache'}
+SECOND SERVICE INFORMATION
+PatientFromDB2{code='hijklmn', name='Sarah', age=27, gender=FEMALE, doctor='Ana', symptom='Fever'}
+PatientFromDB2{code='jklmnop', name='Pamela', age=6, gender=FEMALE, doctor='Emily', symptom='Toothache'}
+PatientFromDB2{code='opqrstu', name='Pamela', age=39, gender=FEMALE, doctor='Stefan', symptom='Toothache'}
+PatientFromDB2{code='ghijklm', name='Emily', age=43, gender=FEMALE, doctor='Peter', symptom='Fever'}
+PatientFromDB2{code='pqrstuv', name='Pamela', age=1, gender=FEMALE, doctor='Sarah', symptom='Fever'}
+PatientFromDB2{code='ghijklm', name='Sarah', age=41, gender=FEMALE, doctor='Sarah', symptom='Headache'}
+PatientFromDB2{code='ghijklm', name='Pamela', age=6, gender=FEMALE, doctor='Pamela', symptom='Headache'}
+THIRD SERVICE INFORMATION
+PatientFromDB2{code='klmnopq', name='Sarah', age=92, gender=FEMALE, doctor='Peter', symptom='Toothache'}
+PatientFromDB2{code='ghijklm', name='Sarah', age=41, gender=FEMALE, doctor='Sarah', symptom='Headache'}
+PatientFromDB2{code='hijklmn', name='Sarah', age=27, gender=FEMALE, doctor='Ana', symptom='Fever'}
+PatientFromDB2{code='nopqrst', name='Sarah', age=74, gender=FEMALE, doctor='Stefan', symptom='Headache'}
+
