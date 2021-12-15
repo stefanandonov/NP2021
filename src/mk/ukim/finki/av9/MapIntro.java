@@ -12,7 +12,6 @@ public class MapIntro {
         //mapata e sortirana spored klucot
         //O(logn) za dodavanje, O(logn) za contains, O(nlogn) iteriranje
         Map<String, String> treeMap = new TreeMap<>();
-
         treeMap.put("FINKI", "FINKI");
         treeMap.put("FinKI", "Finki");
         treeMap.put("NP", "Napredno programiranje");
